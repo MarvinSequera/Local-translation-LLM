@@ -17,9 +17,9 @@ Translate System using local Docker and LLM
 
   1. MKV Metadata Tool
   Ensure mkvmerge is installed:
-  # Ubuntu/Debian
+  ## Ubuntu/Debian
   sudo apt install mkvtoolnix
-  # macOS
+  ## macOS
   brew install mkvtoolnix
 
   2. Ollama Model
@@ -39,21 +39,21 @@ Translate System using local Docker and LLM
 
   node translate.js <video-file> <output-language-code>
   Example:
-  node translate.js "movies/matrix.mkv" es
+  node translate.js "movies/matrix.mkv"
 
   Batch Video Files
 
-  node translate.js <folder-path> <output-language-code>
+  node translate.js <folder-path> <video-folder>
   Example:
-  node translate.js "movies/" es
+  node translate.js "movies" "the movie"
   Processes all .mkv files in the specified folder.
 
   Nested Folder Support
 
   To process subfolders, add a fourth argument:
-  node translate.js <folder-path> <output-language-code> true
+  node translate.js <folder-path> <video-folder> true
   Example:
-  node translate.js "seasons/season-1/" es true
+  node translate.js "Tv Shows" "the serie"  true
 
   Output
 
